@@ -1,0 +1,189 @@
+/* Reseteo básico para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para la barra superior */
+.barra-superior {
+    background-color: #0096d6; /* Azul */
+    color: white;
+    padding: 1rem;
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la imagen */
+.logo {
+    height: 40px; /* Ajusta la altura de la imagen */
+    margin-right: 1rem; /* Espacio entre la imagen y el título */
+}
+
+/* Sección principal del logo y buscador */
+.logo-principal {
+    display: flex; /* Alineación horizontal de los elementos */
+    align-items: center; /* Centrado vertical entre el logo y el buscador */
+    gap: 0.5rem; /* Espaciado pequeño entre el logo y el buscador */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    padding: 1rem;
+}
+
+/* Estilo del logo principal */
+.logo-main {
+    height: 50px; /* Tamaño del logo (ajústalo según necesites) */
+    max-width: 70%; /* Escala proporcional */
+}
+
+/* Estilo del formulario del buscador */
+.barra-buscador {
+    display: flex; /* Alineación horizontal de los elementos del buscador */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Input del buscador */
+.input-buscar {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px; /* Ancho del cuadro de búsqueda */
+    transition: all 0.3s ease-in-out;
+}
+
+.input-buscar:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón del buscador */
+.btn-buscar {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buscar:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+.imagen-derecha {
+    height: 50px; /* Ajusta la altura según lo necesario */
+    width: auto; /* Mantiene las proporciones de la imagen */
+    margin-left: 600px; /* Espaciado al lado izquierdo */
+}
+
+main {
+    padding: 0rem; /* Espaciado interno dentro del main */
+    margin-top: 0rem; /* Espaciado externo hacia arriba del main */
+}
+
+/* Contenedor de las opciones */
+.menu-opciones {
+    display: flex; /* Alineación horizontal de los botones */
+    justify-content: flex-start; /* Alinear los botones a la izquierda */
+    gap: 1rem; /* Espaciado entre los botones */
+    margin-top: 0; /* Eliminar o reducir al mínimo el espaciado superior */
+}
+
+/* Estilo de los botones */
+.boton-opcion {
+    text-decoration: none; /* Sin subrayado */
+    color: #555; /* Gris oscuro para el texto */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Espaciado interior */
+    border: none; /* Elimina el contorno del botón */
+    background: none; /* Sin fondo */
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+.boton-opcion:hover {
+    color: #333; /* Gris más claro al pasar el cursor */
+    transform: scale(1.05); /* Pequeño aumento al pasar el cursor */
+}
+
+.boton-opcion:active {
+    transform: scale(0.95); /* Leve reducción al hacer clic */
+}
+
+/* Estilo para la imagen debajo de los botones */
+.imagen-debajo {
+    text-align: center; /* Centrar la imagen */
+    margin-top: 1rem; /* Espaciado superior */
+}
+
+.imagen-bajo {
+    max-width: 100%; /* Hacer que la imagen sea responsive */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Estilo para el fondo debajo de la imagen */
+.contenido-bajo {
+    background-color: #f1f1f1; /* Fondo gris claro */
+    padding: 2rem; /* Espaciado interior */
+}
+
+/* Contenedor para las imágenes como botones */
+.imagenes-boton {
+    display: flex; /* Alineación horizontal de las imágenes */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    gap: 1rem; /* Espaciado entre las imágenes */
+    margin-top: 2rem; /* Espaciado superior */
+}
+
+/* Estilo de las imágenes como botones */
+.imagen-boton {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantener proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.imagen-boton:hover {
+    transform: scale(1.1); /* Aumentar ligeramente al pasar el cursor */
+    opacity: 0.8; /* Hacer la imagen un poco transparente */
+}
+
+.imagen-boton:active {
+    transform: scale(0.95); /* Reducir ligeramente al hacer clic */
+}
+
+.barra-gris {
+    background-color: #f1f1f1; /* Color gris claro */
+    height: 60px; /* Ajusta la altura según lo que necesites */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    display: flex; /* Usamos flexbox para manejar el alineamiento */
+    align-items: center; /* Centra la imagen verticalmente */
+    padding-left: 10px; /* Espacio desde el borde izquierdo */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.imagen-barra {
+    height: 40px; /* Ajusta la altura de la imagen */
+    width: auto; /* Mantiene las proporciones de la imagen */
+}
+
+.imagen-debajo {
+    width: 100%; /* La imagen ocupa todo el ancho de la pantalla */
+    height: auto; /* Mantiene las proporciones originales */
+    display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
+    margin: 0; /* Elimina cualquier margen adicional */
+    padding: 0; /* Elimina cualquier relleno */
+}
+
+
+
+
+
+
